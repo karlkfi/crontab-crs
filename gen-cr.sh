@@ -21,6 +21,5 @@ metadata:
   namespace: crontab-ns
 spec:
   cronSpec: "* * * * */5"
-  extra: field
 EOF
 done
