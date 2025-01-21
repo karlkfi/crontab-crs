@@ -11,7 +11,7 @@ spec:
     - containerName: "reconciler"
       memoryLimit: 1000Mi
   git:
-    repo: https://github.com/config-sync-examples/crontab-crs
-    branch: main
+    repo: https://github.com/karlkfi/crontab-crs
+    branch: karl-test-max-object-count
     dir: configs
     auth: none
