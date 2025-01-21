@@ -10,7 +10,7 @@ metadata:
   name: crontab-ns
 EOF
 
-for n in {1..13060}
+for n in {1..5000}
 do
   cat >> configs/crs.yaml <<EOF
 ---
