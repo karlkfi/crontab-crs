@@ -10,8 +10,7 @@ metadata:
   name: crontab-ns
 EOF
 
-for n in {1..5000}
-do
+for n in {1..6000}; do
   cat >> configs/crs.yaml <<EOF
 ---
 apiVersion: "stable.example.com/v1"
