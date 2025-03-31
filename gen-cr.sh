@@ -1,7 +1,6 @@
 #!/bin/bash
 
 mkdir -p configs
-rm -f configs/*
 
 cat > configs/ns.yaml <<EOF
 apiVersion: v1
@@ -9,6 +8,8 @@ kind: Namespace
 metadata:
   name: crontab-ns
 EOF
+
+rm -f configs/crs.yaml
 
 for n in {1..5000}; do
   cat >> configs/crs.yaml <<EOF
@@ -20,6 +21,6 @@ metadata:
   namespace: crontab-ns
 spec:
   cronSpec: "* * * * */5"
-  extra: field
+#  extra: field
 EOF
 done
