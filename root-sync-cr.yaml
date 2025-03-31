@@ -4,6 +4,8 @@ kind: RootSync
 metadata:
   name: root-sync
   namespace: config-management-system
+  annotations:
+    configsync.gke.io/deletion-propagation-policy: Foreground
 spec:
   sourceFormat: unstructured
   override:
@@ -15,3 +17,5 @@ spec:
     branch: karl-test-max-object-count
     dir: configs
     auth: none
+  override:
+    statusMode: disabled

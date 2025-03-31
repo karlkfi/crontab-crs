@@ -21,9 +21,14 @@ GKE supports etcd objects up to 3MiB. This can result in one of two errors,
 either from the API Server validating the API request size, or the etcd storage
 layer validating the object size in JSON.
 
+For example:
+
+`KNV2009: source repository contains too many resource objects to inventory with a single ResourceGroup: inventory apply failed: ... Request entity too large: limit is 3145728.`
+
 ### Failed to create typed patch object
 
 If you add an extra field to the CronTab CRs, Config Sync will error.
+
 For example:
 
 `KNV2009: failed to apply CronTab.stable.example.com, crontab-ns/cr-1320: failed to create typed patch object (crontab-ns/cr-1320; stable.example.com/v1, Kind=CronTab): .spec.extra: field not declared in schema`
