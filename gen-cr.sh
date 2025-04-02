@@ -1,7 +1,6 @@
 #!/bin/bash
 
 mkdir -p configs
-rm -f configs/*
 
 cat > configs/ns.yaml <<EOF
 apiVersion: v1
@@ -10,8 +9,9 @@ metadata:
   name: crontab-ns
 EOF
 
-for n in {1..13060}
-do
+rm -f configs/crs.yaml
+
+for n in {1..10000}; do
   cat >> configs/crs.yaml <<EOF
 ---
 apiVersion: "stable.example.com/v1"
