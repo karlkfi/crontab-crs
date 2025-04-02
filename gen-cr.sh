@@ -11,7 +11,7 @@ EOF
 
 rm -f configs/crs.yaml
 
-for n in {1..8000}; do
+for n in {1..9000}; do
   cat >> configs/crs.yaml <<EOF
 ---
 apiVersion: "stable.example.com/v1"

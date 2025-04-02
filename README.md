@@ -1,9 +1,9 @@
 # crontab-crs
 
-This repo includes a namespace and 8000 CronTab CRs under the namespace.
+This repo includes a namespace and 9000 CronTab CRs under the namespace.
 
 - `configs/ns.yaml` defines the `crontab-ns` Namespace
-- `configs/crs.yaml` defines CronTab CRs `cr-1` to `cr-8000`
+- `configs/crs.yaml` defines CronTab CRs `cr-1` to `cr-9000`
 
 ## Usage
 
